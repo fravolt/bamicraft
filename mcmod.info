@@ -1,0 +1,10 @@
+[{
+  "modid": "bamicraft",
+  "name": "Bamicraft",
+  "description": "Lets you craft bami. And bami balls. Who doesn't love that?",
+  "version": "0.1",
+  "mcversion": "1.12",
+  "logoFile": "assets/images/bamibal.png",
+  "updateJSON": "minecraftforge.net/versions.json",
+  "authorList": ["fravolt"]
+}]
