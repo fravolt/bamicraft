@@ -1,7 +1,8 @@
 package fravolt.bamicraft.proxy;
 
-import fravolt.bamicraft.blocks.ModBlocks;
-import fravolt.bamicraft.blocks.TestBlock;
+import fravolt.bamicraft.blocks.BamiBlock;
+import fravolt.bamicraft.init.ModBlocks;
+import fravolt.bamicraft.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -26,11 +27,12 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().register(new TestBlock());
+        event.getRegistry().register(new BamiBlock());
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(new ItemBlock(ModBlocks.testBlock).setRegistryName(ModBlocks.testBlock.getRegistryName()));
+        event.getRegistry().registerAll(ModItems.bamiBall);
+        event.getRegistry().register(new ItemBlock(ModBlocks.bamiBlock).setRegistryName(ModBlocks.bamiBlock.getRegistryName()));
     }
 }

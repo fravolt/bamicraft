@@ -1,5 +1,7 @@
 package fravolt.bamicraft.proxy;
 
+import fravolt.bamicraft.init.ModBlocks;
+import fravolt.bamicraft.init.ModItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -15,5 +17,7 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
+        ModItems.initModels();
+        ModBlocks.initModels();
     }
 }
