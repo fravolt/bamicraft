@@ -1,0 +1,11 @@
+[
+{
+  "modid": "bamicraft",
+  "name": "Bamicraft",
+  "description": "A mod that lets the user craft bami. And bami balls. Who doesn't love that?",
+  "version": "0.1",
+  "mcversion": "${mcversion}",
+  "authorList": ["fravolt"],
+  "logoFile": ""
+}
+]
