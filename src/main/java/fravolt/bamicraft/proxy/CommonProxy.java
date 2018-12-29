@@ -32,7 +32,7 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().registerAll(ModItems.bamiBall);
+        event.getRegistry().register(ModItems.bamiBall);
         event.getRegistry().register(new ItemBlock(ModBlocks.bamiBlock).setRegistryName(ModBlocks.bamiBlock.getRegistryName()));
     }
 }

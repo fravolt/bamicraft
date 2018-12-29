@@ -3,6 +3,7 @@ package fravolt.bamicraft.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
@@ -14,6 +15,7 @@ public class BamiBlock extends Block {
         super(Material.SAND);
         setUnlocalizedName("bamicraft.bamiblock");
         setRegistryName("bamiblock");
+        setCreativeTab(CreativeTabs.SEARCH);
     }
 
     @SideOnly(Side.CLIENT)
